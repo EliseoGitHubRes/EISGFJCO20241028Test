@@ -29,12 +29,20 @@ namespace EISGFJCO20241028Test
 			// Espera un momento para que se carguen los resultados
 			System.Threading.Thread.Sleep(5000);
 
+			var nombre = driver.FindElement(By.Id("dui"));
+
+			nombre.SendKeys("000000000");
+
+			var precio = driver.FindElement(By.Id("password"));
+
+			precio.SendKeys("susadmin");
+
 			// Encuentra el cuadro de búsqueda
 			var btn = driver.FindElement(By.ClassName("btn-primary"));
 
 			btn.Click();
 			// Espera un momento para que se carguen los resultados
-			System.Threading.Thread.Sleep(1000);
+			System.Threading.Thread.Sleep(5000);
 
 		}
 
