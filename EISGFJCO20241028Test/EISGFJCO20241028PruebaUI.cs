@@ -63,19 +63,19 @@ namespace EISGFJCO20241028Test
 
 			var nombreRol = driver.FindElement(By.Id("Nombre"));
 
-			nombre.SendKeys("ADMINPRUEBA");
+			nombreRol.SendKeys("ADMINPRUEBA");
 
-			var descriocion = driver.FindElement(By.Id("Descripcion"));
+			var descripcion = driver.FindElement(By.Id("Descripcion"));
 
-			precio.SendKeys("ES UNA PRUEBA ");
+			descripcion.SendKeys("ES UNA PRUEBA ");
 
-			var btnGuardar = driver.FindElement(By.ClassName("btn btn-primary"));
+			var btnGuardar = driver.FindElement(By.ClassName("btn-primary"));
 
 			btnGuardar.Click();
 
 			System.Threading.Thread.Sleep(1000);
 
-			var regresar = driver.FindElement(By.ClassName("btn btn-success"));
+			var regresar = driver.FindElement(By.ClassName("btn-success"));
 
 			regresar.Click();
 
@@ -91,3 +91,4 @@ namespace EISGFJCO20241028Test
 		}
 	}
 }
+ 
