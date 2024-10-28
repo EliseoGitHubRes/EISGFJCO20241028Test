@@ -24,17 +24,17 @@ namespace EISGFJCO20241028Test
 		public void Blazor()
 		{
 			// Navega a Google
-			driver.Navigate().GoToUrl("https://esfebodega.netlify.app/login");
+			driver.Navigate().GoToUrl("https://esfebodega.netlify.app");
 
 			// Espera un momento para que se carguen los resultados
-			System.Threading.Thread.Sleep(1000);
+			System.Threading.Thread.Sleep(4000);
 
 			// Encuentra el cuadro de búsqueda
 			var btn = driver.FindElement(By.ClassName("btn btn-primary"));
 
 			btn.Click();
 			// Espera un momento para que se carguen los resultados
-			System.Threading.Thread.Sleep(1000);
+			System.Threading.Thread.Sleep(3000);
 
 		}
 
