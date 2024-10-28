@@ -42,7 +42,24 @@ namespace EISGFJCO20241028Test
 
 			btn.Click();
 			// Espera un momento para que se carguen los resultados
-			System.Threading.Thread.Sleep(5000);
+			System.Threading.Thread.Sleep(2000);
+
+			// Encuentra el cuadro de búsqueda
+			var btn1 = driver.FindElement(By.LinkText("Roles"));
+
+			btn1.Click();
+
+			// Espera un momento para que se carguen los resultados
+			System.Threading.Thread.Sleep(1000);
+
+			// Encuentra el cuadro de búsqueda
+			var btn2 = driver.FindElement(By.ClassName("btn-success"));
+
+			btn2.Click();
+
+			// Espera un momento para que se carguen los resultados
+			System.Threading.Thread.Sleep(1000);
+
 
 		}
 
