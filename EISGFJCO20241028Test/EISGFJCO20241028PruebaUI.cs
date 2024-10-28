@@ -79,7 +79,46 @@ namespace EISGFJCO20241028Test
 
 			regresar.Click();
 
+			System.Threading.Thread.Sleep(3000);
+
+
+			//
+			// Encuentra el cuadro de búsqueda
+			var btn10 = driver.FindElement(By.LinkText("Bodega"));
+
+			btn10.Click();
+
+			// Espera un momento para que se carguen los resultados
 			System.Threading.Thread.Sleep(1000);
+
+			// Encuentra el cuadro de búsqueda
+			var btn20 = driver.FindElement(By.ClassName("btn-success"));
+
+			btn20.Click();
+
+
+			// Espera un momento para que se carguen los resultados
+			System.Threading.Thread.Sleep(1000);
+
+			var nombreBodega = driver.FindElement(By.Id("Nombre"));
+
+			nombreBodega.SendKeys("PRUEBABODEGA");
+
+			var descripcionBodega = driver.FindElement(By.Id("Descripcion"));
+
+			descripcionBodega.SendKeys("ES UNA PRUEBA ");
+
+			var btnGuardar1 = driver.FindElement(By.ClassName("btn-primary"));
+
+			btnGuardar1.Click();
+
+			System.Threading.Thread.Sleep(1000);
+
+			var regresar1 = driver.FindElement(By.ClassName("btn-success"));
+
+			regresar1.Click();
+
+			System.Threading.Thread.Sleep(3000);
 
 
 		}
